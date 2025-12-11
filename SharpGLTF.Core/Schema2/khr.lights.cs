@@ -45,7 +45,7 @@ namespace SharpGLTF.Schema2
     /// <remarks>
     /// This is part of <see href="https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Khronos/KHR_lights_punctual"/> extension.
     /// </remarks>
-    [System.Diagnostics.DebuggerDisplay("{LightType} {Color} {Intensity} {Range}")]
+    //[System.Diagnostics.DebuggerDisplay("{LightType} {Color} {Intensity} {Range}")]
     public sealed partial class PunctualLight
     {
         #region constants

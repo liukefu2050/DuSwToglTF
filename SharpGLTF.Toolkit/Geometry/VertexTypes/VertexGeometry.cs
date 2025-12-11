@@ -28,7 +28,7 @@ namespace SharpGLTF.Geometry.VertexTypes
     /// <summary>
     /// Defines a Vertex attribute with a Position.
     /// </summary>
-    [System.Diagnostics.DebuggerDisplay("{_GetDebuggerDisplay(),nq}")]
+    //[System.Diagnostics.DebuggerDisplay("{_GetDebuggerDisplay(),nq}")]
     public struct VertexPosition : IVertexGeometry, IEquatable<VertexPosition>
     {
         #region debug
@@ -116,7 +116,7 @@ namespace SharpGLTF.Geometry.VertexTypes
     /// <summary>
     /// Defines a Vertex attribute with a Position and a Normal.
     /// </summary>
-    [System.Diagnostics.DebuggerDisplay("{_GetDebuggerDisplay(),nq}")]
+    //[System.Diagnostics.DebuggerDisplay("{_GetDebuggerDisplay(),nq}")]
     public struct VertexPositionNormal : IVertexGeometry, IEquatable<VertexPositionNormal>
     {
         #region debug
@@ -214,7 +214,7 @@ namespace SharpGLTF.Geometry.VertexTypes
     /// <summary>
     /// Defines a Vertex attribute with a Position, a Normal and a Tangent.
     /// </summary>
-    [System.Diagnostics.DebuggerDisplay("{_GetDebuggerDisplay(),nq}")]
+    //[System.Diagnostics.DebuggerDisplay("{_GetDebuggerDisplay(),nq}")]
     public struct VertexPositionNormalTangent : IVertexGeometry, IEquatable<VertexPositionNormalTangent>
     {
         #region debug
@@ -316,7 +316,7 @@ namespace SharpGLTF.Geometry.VertexTypes
     /// <summary>
     /// Defines a Vertex attribute with a Position, a Normal and a Tangent.
     /// </summary>
-    [System.Diagnostics.DebuggerDisplay("{_GetDebuggerDisplay(),nq}")]
+    //[System.Diagnostics.DebuggerDisplay("{_GetDebuggerDisplay(),nq}")]
     public struct VertexGeometryDelta : IVertexGeometry, IEquatable<VertexGeometryDelta>
     {
         #region debug

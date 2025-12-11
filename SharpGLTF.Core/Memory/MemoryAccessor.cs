@@ -13,14 +13,14 @@ namespace SharpGLTF.Memory
     /// <summary>
     /// Defines the memory encoding pattern for an arbitrary <see cref="BYTES"/>.
     /// </summary>
-    [System.Diagnostics.DebuggerDisplay("{_GetDebuggerDisplay(),nq}")]
+    //[System.Diagnostics.DebuggerDisplay("{_GetDebuggerDisplay(),nq}")]
     public struct MemoryAccessInfo
     {
         #region debug
 
         internal string _GetDebuggerDisplay()
         {
-            return Debug.DebuggerDisplay.ToReport(this);
+            return this.Name ?? "Accessor";
         }
 
         #endregion
@@ -299,7 +299,7 @@ namespace SharpGLTF.Memory
     /// <summary>
     /// Wraps a <see cref="BYTES"/> decoding it and exposing its content as arrays of different types.
     /// </summary>
-    [System.Diagnostics.DebuggerDisplay("{_GetDebuggerDisplay(),nq}")]
+    //[System.Diagnostics.DebuggerDisplay("{_GetDebuggerDisplay(),nq}")]
     public sealed partial class MemoryAccessor
     {
         #region debug

@@ -9,8 +9,8 @@ namespace SharpGLTF.Validation
 
     using PARAMNAME = ValueLocation;
 
-    [System.Diagnostics.DebuggerDisplay("{_Current}")]
-    [System.Diagnostics.DebuggerStepThrough]
+    //[System.Diagnostics.DebuggerDisplay("{_Current}")]
+    //[System.Diagnostics.DebuggerStepThrough]
     partial struct ValidationContext
     {
         private readonly IO.JsonSerializable _Current;

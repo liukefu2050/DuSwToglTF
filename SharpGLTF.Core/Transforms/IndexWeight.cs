@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SharpGLTF.Transforms
 {
-    [System.Diagnostics.DebuggerDisplay("{Index} = {Weight}")]
+    //[System.Diagnostics.DebuggerDisplay("{Index} = {Weight}")]
     readonly struct IndexWeight
     {
         #region constructor

@@ -10,7 +10,7 @@ namespace SharpGLTF.Memory
     /// <summary>
     /// Defines the formatting in which a byte sequence can be encoded/decoded to attribute elements.
     /// </summary>
-    [System.Diagnostics.DebuggerDisplay("{_GetDebuggerDisplay(),nq}")]
+    //[System.Diagnostics.DebuggerDisplay("{_GetDebuggerDisplay(),nq}")]
     public readonly struct AttributeFormat : IEquatable<AttributeFormat>
     {
         #region debug

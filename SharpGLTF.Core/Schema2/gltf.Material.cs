@@ -6,7 +6,7 @@ using System.Text;
 
 namespace SharpGLTF.Schema2
 {
-    [System.Diagnostics.DebuggerDisplay("Material[{LogicalIndex}] {Name}")]
+    //[System.Diagnostics.DebuggerDisplay("Material[{LogicalIndex}] {Name}")]
     public sealed partial class Material
     {
         #region lifecycle

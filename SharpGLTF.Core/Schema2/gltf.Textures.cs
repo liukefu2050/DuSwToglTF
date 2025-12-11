@@ -11,7 +11,7 @@ namespace SharpGLTF.Schema2
     using TEXMIPMAP = TextureMipMapFilter;
     using TEXWRAP = TextureWrapMode;
 
-    [System.Diagnostics.DebuggerDisplay("Texture[{LogicalIndex}] {Name}")]
+    //[System.Diagnostics.DebuggerDisplay("Texture[{LogicalIndex}] {Name}")]
     public sealed partial class Texture
     {
         #region lifecycle
@@ -240,7 +240,7 @@ namespace SharpGLTF.Schema2
         }
     }
 
-    [System.Diagnostics.DebuggerDisplay("TextureSampler[{LogicalIndex}] {Name}")]
+    //[System.Diagnostics.DebuggerDisplay("TextureSampler[{LogicalIndex}] {Name}")]
     public sealed partial class TextureSampler
     {
         #region lifecycle

@@ -108,7 +108,7 @@ namespace SharpGLTF.Collections
             }
         }
 
-        [System.Diagnostics.DebuggerDisplay("{GetValue()} {GetHashCode()}")]
+        //[System.Diagnostics.DebuggerDisplay("{GetValue()} {GetHashCode()}")]
         private readonly struct QueryKey : IVertexKey
         {
             public QueryKey(T value) { _Value = value; }
@@ -118,7 +118,7 @@ namespace SharpGLTF.Collections
             public T GetValue() { return _Value; }
         }
 
-        [System.Diagnostics.DebuggerDisplay("{GetValue()} {GetHashCode()}")]
+        //[System.Diagnostics.DebuggerDisplay("{GetValue()} {GetHashCode()}")]
         private readonly struct StoredKey : IVertexKey
         {
             public StoredKey(IReadOnlyList<T> src, int idx)

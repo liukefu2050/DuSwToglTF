@@ -7,7 +7,7 @@ using BYTES = System.ArraySegment<byte>;
 
 namespace SharpGLTF.Schema2
 {
-    [System.Diagnostics.DebuggerDisplay("{_DebuggerDisplay(),nq}")]
+    //[System.Diagnostics.DebuggerDisplay("{_DebuggerDisplay(),nq}")]
     public sealed partial class Image
     {
         #region debug

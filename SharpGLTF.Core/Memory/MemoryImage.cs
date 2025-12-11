@@ -10,7 +10,7 @@ namespace SharpGLTF.Memory
     /// <summary>
     /// Represents an image file stored as an in-memory byte array
     /// </summary>
-    [System.Diagnostics.DebuggerDisplay("{DisplayText,nq}")]
+    //[System.Diagnostics.DebuggerDisplay("{DisplayText,nq}")]
     public readonly struct MemoryImage : IEquatable<MemoryImage>
     {
         #region constants

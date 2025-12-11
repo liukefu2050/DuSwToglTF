@@ -15,7 +15,7 @@ namespace SharpGLTF.Transforms
     /// - As an utility class to define per vertex joint weights in mesh skinning.
     /// - As an animation key in morph targets; a mesh can have many morph targets, but realistically and due to GPU limitations, only up to 8 morph targets can be blended at the same time.
     /// </remarks>
-    [System.Diagnostics.DebuggerDisplay("{_GetDebuggerDisplay(),nq}")]
+    //[System.Diagnostics.DebuggerDisplay("{_GetDebuggerDisplay(),nq}")]
     [System.Runtime.InteropServices.StructLayout(System.Runtime.InteropServices.LayoutKind.Sequential)]
     public readonly struct SparseWeight8
     {

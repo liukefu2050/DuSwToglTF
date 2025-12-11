@@ -12,7 +12,7 @@ using TEXWRAP = SharpGLTF.Schema2.TextureWrapMode;
 
 namespace SharpGLTF.Materials
 {
-    [System.Diagnostics.DebuggerDisplay("{_DebuggerDisplay(),nq}")]
+    //[System.Diagnostics.DebuggerDisplay("{_DebuggerDisplay(),nq}")]
     public class TextureBuilder
     {
         #region Debug
@@ -237,7 +237,7 @@ namespace SharpGLTF.Materials
         #endregion
     }
 
-    [System.Diagnostics.DebuggerDisplay("Transform 𝐒:{Scale} 𝐑:{Rotation} 𝚻:{Offset}")]
+    //[System.Diagnostics.DebuggerDisplay("Transform 𝐒:{Scale} 𝐑:{Rotation} 𝚻:{Offset}")]
     public class TextureTransformBuilder
     {
         #region lifecycle

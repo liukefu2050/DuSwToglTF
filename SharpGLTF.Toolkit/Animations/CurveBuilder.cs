@@ -341,7 +341,7 @@ namespace SharpGLTF.Animations
         #endregion
     }
 
-    [System.Diagnostics.DebuggerDisplay("{IncomingTangent} -> {Point}[{Degree}] -> {OutgoingTangent}")]
+    //[System.Diagnostics.DebuggerDisplay("{IncomingTangent} -> {Point}[{Degree}] -> {OutgoingTangent}")]
     struct _CurveNode<T>
         where T : struct
     {

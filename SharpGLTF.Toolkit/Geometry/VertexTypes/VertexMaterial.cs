@@ -27,7 +27,7 @@ namespace SharpGLTF.Geometry.VertexTypes
     /// <summary>
     /// Defines a Vertex attribute with a material Color.
     /// </summary>
-    [System.Diagnostics.DebuggerDisplay("{_GetDebuggerDisplay(),nq}")]
+    //[System.Diagnostics.DebuggerDisplay("{_GetDebuggerDisplay(),nq}")]
     public struct VertexColor1 : IVertexMaterial, IEquatable<VertexColor1>
     {
         #region debug
@@ -107,7 +107,7 @@ namespace SharpGLTF.Geometry.VertexTypes
     /// <summary>
     /// Defines a Vertex attribute with a two material Colors.
     /// </summary>
-    [System.Diagnostics.DebuggerDisplay("{_GetDebuggerDisplay(),nq}")]
+    //[System.Diagnostics.DebuggerDisplay("{_GetDebuggerDisplay(),nq}")]
     public struct VertexColor2 : IVertexMaterial, IEquatable<VertexColor2>
     {
         #region debug
@@ -194,7 +194,7 @@ namespace SharpGLTF.Geometry.VertexTypes
     /// <summary>
     /// Defines a Vertex attribute with a Texture Coordinate.
     /// </summary>
-    [System.Diagnostics.DebuggerDisplay("{_GetDebuggerDisplay(),nq}")]
+    //[System.Diagnostics.DebuggerDisplay("{_GetDebuggerDisplay(),nq}")]
     public struct VertexTexture1 : IVertexMaterial, IEquatable<VertexTexture1>
     {
         #region debug
@@ -273,7 +273,7 @@ namespace SharpGLTF.Geometry.VertexTypes
     /// <summary>
     /// Defines a Vertex attribute with two Texture Coordinates.
     /// </summary>
-    [System.Diagnostics.DebuggerDisplay("{_GetDebuggerDisplay(),nq}")]
+    //[System.Diagnostics.DebuggerDisplay("{_GetDebuggerDisplay(),nq}")]
     public struct VertexTexture2 : IVertexMaterial, IEquatable<VertexTexture2>
     {
         #region debug
@@ -362,7 +362,7 @@ namespace SharpGLTF.Geometry.VertexTypes
     /// <summary>
     /// Defines a Vertex attribute with a Color material and a Texture Coordinate.
     /// </summary>
-    [System.Diagnostics.DebuggerDisplay("{_GetDebuggerDisplay(),nq}")]
+    //[System.Diagnostics.DebuggerDisplay("{_GetDebuggerDisplay(),nq}")]
     public struct VertexColor1Texture1 : IVertexMaterial, IEquatable<VertexColor1Texture1>
     {
         #region debug
@@ -447,7 +447,7 @@ namespace SharpGLTF.Geometry.VertexTypes
     /// <summary>
     /// Defines a Vertex attribute with a material Colors and two Texture Coordinates.
     /// </summary>
-    [System.Diagnostics.DebuggerDisplay("{_GetDebuggerDisplay(),nq}")]
+    //[System.Diagnostics.DebuggerDisplay("{_GetDebuggerDisplay(),nq}")]
     public struct VertexColor1Texture2 : IVertexMaterial, IEquatable<VertexColor1Texture2>
     {
         #region debug
@@ -545,7 +545,7 @@ namespace SharpGLTF.Geometry.VertexTypes
     /// <summary>
     /// Defines a Vertex attribute with two material Colors and two Texture Coordinates.
     /// </summary>
-    [System.Diagnostics.DebuggerDisplay("{_GetDebuggerDisplay(),nq}")]
+    //[System.Diagnostics.DebuggerDisplay("{_GetDebuggerDisplay(),nq}")]
     public struct VertexColor2Texture2 : IVertexMaterial, IEquatable<VertexColor2Texture2>
     {
         #region debug

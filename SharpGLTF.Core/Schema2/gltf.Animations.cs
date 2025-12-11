@@ -11,7 +11,7 @@ using SharpGLTF.Validation;
 
 namespace SharpGLTF.Schema2
 {
-    [System.Diagnostics.DebuggerDisplay("Animation[{LogicalIndex}] {Name}")]
+    //[System.Diagnostics.DebuggerDisplay("Animation[{LogicalIndex}] {Name}")]
     public sealed partial class Animation
     {
         #region lifecycle
@@ -291,7 +291,7 @@ namespace SharpGLTF.Schema2
         #endregion
     }
 
-    [System.Diagnostics.DebuggerDisplay("AnimChannel LogicalNode[{TargetNode.LogicalIndex}].{TargetNodePath}")]
+    //[System.Diagnostics.DebuggerDisplay("AnimChannel LogicalNode[{TargetNode.LogicalIndex}].{TargetNodePath}")]
     sealed partial class AnimationChannel : IChildOf<Animation>
     {
         #region lifecycle

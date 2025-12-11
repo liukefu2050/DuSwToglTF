@@ -16,7 +16,7 @@ namespace SharpGLTF.IO
     /// This usually happens with unknown extensions, which are stored using this
     /// object.
     /// </remarks>
-    [System.Diagnostics.DebuggerDisplay("Unknown {_Name}")]
+    //[System.Diagnostics.DebuggerDisplay("Unknown {_Name}")]
     class UnknownNode : JsonSerializable
     {
         #region lifecycle

@@ -6,7 +6,7 @@ using System.Text;
 
 namespace SharpGLTF.Materials
 {
-    [System.Diagnostics.DebuggerDisplay("{_GetDebuggerDisplay(),nq}")]
+    //[System.Diagnostics.DebuggerDisplay("{_GetDebuggerDisplay(),nq}")]
     public class ChannelBuilder
     {
         #region debug
