@@ -9,7 +9,7 @@ using SCHEMA2SCENE = SharpGLTF.Scenes.Schema2SceneBuilder.IOperator<SharpGLTF.Sc
 
 namespace SharpGLTF.Scenes
 {
-    //[System.Diagnostics.DebuggerDisplay("{Content}")]
+    [System.Diagnostics.DebuggerDisplay("{Content}")]
     public sealed class InstanceBuilder : SCHEMA2SCENE
     {
         #region lifecycle

@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace SharpGLTF.Schema2
 {
-    //[System.Diagnostics.DebuggerDisplay("Scene[{LogicalIndex}] {Name}")]
+    [System.Diagnostics.DebuggerDisplay("Scene[{LogicalIndex}] {Name}")]
     public sealed partial class Scene : IVisualNodeContainer
     {
         #region lifecycle

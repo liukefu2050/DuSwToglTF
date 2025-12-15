@@ -49,7 +49,7 @@ namespace SharpGLTF.Scenes
 
         #pragma warning disable CA1034 // Nested types should not be visible
 
-        //[System.Diagnostics.DebuggerDisplay("Directional")]
+        [System.Diagnostics.DebuggerDisplay("Directional")]
         public sealed class Directional : LightBuilder
         {
             #region lifecycle
@@ -67,7 +67,7 @@ namespace SharpGLTF.Scenes
             #endregion
         }
 
-        //[System.Diagnostics.DebuggerDisplay("Point")]
+        [System.Diagnostics.DebuggerDisplay("Point")]
         public sealed class Point : LightBuilder
         {
             #region lifecycle
@@ -103,7 +103,7 @@ namespace SharpGLTF.Scenes
             #endregion
         }
 
-        //[System.Diagnostics.DebuggerDisplay("Spot")]
+        [System.Diagnostics.DebuggerDisplay("Spot")]
 
         public sealed class Spot : LightBuilder
         {

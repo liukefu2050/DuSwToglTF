@@ -35,7 +35,7 @@ namespace SharpGLTF.Scenes
 
         #pragma warning disable CA1034 // Nested types should not be visible
 
-        //[System.Diagnostics.DebuggerDisplay("Orthographic ({XMag},{YMag})  {ZNear} < {ZFar}")]
+        [System.Diagnostics.DebuggerDisplay("Orthographic ({XMag},{YMag})  {ZNear} < {ZFar}")]
         public sealed class Orthographic : CameraBuilder
         {
             #region lifecycle
@@ -91,7 +91,7 @@ namespace SharpGLTF.Scenes
             #endregion
         }
 
-        //[System.Diagnostics.DebuggerDisplay("Perspective {AspectRatio} {VerticalFOV}   {ZNear} < {ZFar}")]
+        [System.Diagnostics.DebuggerDisplay("Perspective {AspectRatio} {VerticalFOV}   {ZNear} < {ZFar}")]
         public sealed partial class Perspective : CameraBuilder
         {
             #region lifecycle

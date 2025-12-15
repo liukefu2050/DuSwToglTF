@@ -11,7 +11,7 @@ using MESHBUILDER = SharpGLTF.Geometry.IMeshBuilder<SharpGLTF.Materials.Material
 
 namespace SharpGLTF.Scenes
 {
-    //[System.Diagnostics.DebuggerDisplay("Scene {_Name}")]
+    [System.Diagnostics.DebuggerDisplay("Scene {_Name}")]
     public partial class SceneBuilder
     {
         #region lifecycle

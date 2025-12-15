@@ -44,7 +44,7 @@ namespace DuSwToglTF.ViewModel
         {
             this.body = body;
             this.location = location;
-            Name = body.Name;
+            Name = body.Name+"fan";
         }
 
         internal static SwNode Create(IBody2 body, System.Numerics.Matrix4x4 location)

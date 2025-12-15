@@ -79,7 +79,7 @@ namespace SharpGLTF.Runtime
         #endregion
     }
 
-    //[System.Diagnostics.DebuggerDisplay("{_GetDebugString(),nq}")]
+    [System.Diagnostics.DebuggerDisplay("{_GetDebugString(),nq}")]
     sealed class _MeshPrimitiveDecoder<TMaterial>
         : _MeshPrimitiveDecoder
         , IMeshPrimitiveDecoder<TMaterial>
@@ -108,7 +108,7 @@ namespace SharpGLTF.Runtime
         #endregion
     }
 
-    //[System.Diagnostics.DebuggerDisplay("{_GetDebugString(),nq}")]
+    [System.Diagnostics.DebuggerDisplay("{_GetDebugString(),nq}")]
     class _MeshPrimitiveDecoder : IMeshPrimitiveDecoder
     {
         #region debug
@@ -288,7 +288,7 @@ namespace SharpGLTF.Runtime
         #endregion
     }
 
-    //[System.Diagnostics.DebuggerDisplay("Vertices: {VertexCount}")]
+    [System.Diagnostics.DebuggerDisplay("Vertices: {VertexCount}")]
     sealed class _MeshGeometryDecoder
         : VertexNormalsFactory.IMeshPrimitive
         , VertexTangentsFactory.IMeshPrimitive
@@ -363,7 +363,7 @@ namespace SharpGLTF.Runtime
         #endregion
     }
 
-    //[System.Diagnostics.DebuggerDisplay("Vertices: {VertexCount}")]
+    [System.Diagnostics.DebuggerDisplay("Vertices: {VertexCount}")]
     sealed class _MorphTargetDecoder
         : VertexNormalsFactory.IMeshPrimitive
         , VertexTangentsFactory.IMeshPrimitive
@@ -468,7 +468,7 @@ namespace SharpGLTF.Runtime
         #endregion
     }
 
-    //[System.Diagnostics.DebuggerDisplay("Vertex {_VertexIndex} Positions deltas")]
+    [System.Diagnostics.DebuggerDisplay("Vertex {_VertexIndex} Positions deltas")]
     readonly struct _MorphTargetPositionSlice : IReadOnlyList<XYZ>
     {
         public _MorphTargetPositionSlice(IReadOnlyList<_MorphTargetDecoder> ggg, int idx)
@@ -486,7 +486,7 @@ namespace SharpGLTF.Runtime
         System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() { throw new NotImplementedException(); }
     }
 
-    //[System.Diagnostics.DebuggerDisplay("Vertex {_VertexIndex} Normals deltas")]
+    [System.Diagnostics.DebuggerDisplay("Vertex {_VertexIndex} Normals deltas")]
     readonly struct _MorphTargetNormalSlice : IReadOnlyList<XYZ>
     {
         public _MorphTargetNormalSlice(IReadOnlyList<_MorphTargetDecoder> ggg, int idx)
@@ -504,7 +504,7 @@ namespace SharpGLTF.Runtime
         System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() { throw new NotImplementedException(); }
     }
 
-    //[System.Diagnostics.DebuggerDisplay("Vertex {_VertexIndex} Tangents deltas")]
+    [System.Diagnostics.DebuggerDisplay("Vertex {_VertexIndex} Tangents deltas")]
     readonly struct _MorphTargetTangentSlice : IReadOnlyList<XYZ>
     {
         public _MorphTargetTangentSlice(IReadOnlyList<_MorphTargetDecoder> ggg, int idx)

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SharpGLTF.Schema2
 {
-    //[System.Diagnostics.DebuggerDisplay("Camera[{LogicalIndex}] {Name} {_type}")]
+    [System.Diagnostics.DebuggerDisplay("Camera[{LogicalIndex}] {Name} {_type}")]
     public sealed partial class Camera
     {
         #region lifecycle
@@ -117,7 +117,7 @@ namespace SharpGLTF.Schema2
         System.Numerics.Matrix4x4 Matrix { get; }
     }
 
-    //[System.Diagnostics.DebuggerDisplay("Orthographic ({XMag},{YMag})  {ZNear} < {ZFar}")]
+    [System.Diagnostics.DebuggerDisplay("Orthographic ({XMag},{YMag})  {ZNear} < {ZFar}")]
     public sealed partial class CameraOrthographic : ICamera
     {
         #region lifecycle
@@ -195,7 +195,7 @@ namespace SharpGLTF.Schema2
         #endregion
     }
 
-    //[System.Diagnostics.DebuggerDisplay("Perspective {AspectRatio} {VerticalFOV}   {ZNear} < {ZFar}")]
+    [System.Diagnostics.DebuggerDisplay("Perspective {AspectRatio} {VerticalFOV}   {ZNear} < {ZFar}")]
     public sealed partial class CameraPerspective : ICamera
     {
         #region lifecycle

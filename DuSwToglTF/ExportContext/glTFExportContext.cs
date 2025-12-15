@@ -39,13 +39,13 @@ namespace DuSwToglTF.ExportContext
 
         public void Finish(bool obj,bool gltf,bool glb)
         {
-           
+            
             //_sceneBuilder.Extras = JsonContent.CreateFrom(CustomProperties.CustomProperties);
             _model = _sceneBuilder.ToGltf2();
-
+            Console.WriteLine($"ToGltf2完成:" + DateTime.Now.ToString());
             //_model.SetExtension<CustomPropertiesExtension>(CustomProperties);
 
-            if(obj)
+            if (obj)
                 Save(".obj",(filePathName) => _model.SaveAsWavefront(filePathName));            
             if(glb)
                 Save(".glb",(filePathName) => _model.SaveGLB(filePathName));
@@ -68,7 +68,8 @@ namespace DuSwToglTF.ExportContext
             //判断文件是否存在
             if (File.Exists(filePathName))
             {
-                var result = MessageBox.Show($"Replace {filePathName} ??", "File Exist", MessageBoxButton.YesNo);
+                File.Delete(filePathName);
+                var result = MessageBox.Show($"Replace {filePathName} ??", "测试范 Exist", MessageBoxButton.YesNo);
                 if (result == MessageBoxResult.No)
                 {
                     return;
@@ -77,9 +78,9 @@ namespace DuSwToglTF.ExportContext
             action?.Invoke(filePathName);
         }
 
-        public void OnBodyBegin(IBody2 body,MaterialBuilder docMatBuilder,Matrix4x4 postion)
+        public void OnBodyBegin(IBody2 body,MaterialBuilder docMatBuilder,Matrix4x4 postion,string displayName)
         {
-            _sceneBuilder.AddRigidMesh(body.GetBodyMeshBuilder(docMatBuilder),postion);
+            _sceneBuilder.AddRigidMesh(body.GetBodyMeshBuilder(docMatBuilder,displayName),postion);
         }
 
         public void OnCustomPropertyBegin(CustomPropertiesExtension.CustomProperty prop)
@@ -98,7 +99,7 @@ namespace DuSwToglTF.ExportContext
     {
         bool Start();
 
-        void OnBodyBegin(IBody2 body, MaterialBuilder docMatBuilder, Matrix4x4 postion);
+        void OnBodyBegin(IBody2 body, MaterialBuilder docMatBuilder, Matrix4x4 postion, string dis);
 
         void Finish(bool obj, bool gltf, bool glb);
     }

@@ -6,7 +6,7 @@ using System.Text;
 
 namespace SharpGLTF.Collections
 {
-    //[System.Diagnostics.DebuggerDisplay("{Count}")]
+    [System.Diagnostics.DebuggerDisplay("{Count}")]
     sealed class ChildrenCollection<T, TParent> : IList<T>, IReadOnlyList<T>
         where T : class, IChildOf<TParent>
         where TParent : class

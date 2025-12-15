@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Numerics;
 using SharpGLTF.Memory;
@@ -12,15 +11,15 @@ namespace SharpGLTF.Schema2
 {
     // https://github.com/KhronosGroup/glTF/issues/827#issuecomment-277537204
 
-    //[System.Diagnostics.DebuggerDisplay("{_GetDebuggerDisplay(),nq}")]
-    //[System.Diagnostics.DebuggerTypeProxy(typeof(Debug._AccessorDebugProxy))]
+    [System.Diagnostics.DebuggerDisplay("{_GetDebuggerDisplay(),nq}")]
+    // [System.Diagnostics.DebuggerTypeProxy(typeof(Debug._AccessorDebugProxy))]
     public sealed partial class Accessor
     {
         #region debug
 
         internal string _GetDebuggerDisplay()
         {
-            return this.Name ?? "Accessor";
+            return "";//Debug.DebuggerDisplay.ToReportLong(this);
         }
 
         #endregion

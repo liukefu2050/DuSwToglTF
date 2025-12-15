@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace SharpGLTF.Schema2
 {
-    //[System.Diagnostics.DebuggerDisplay("Buffer[{LogicalIndex}] {Name} Bytes:{_Content?.Length ?? 0}")]
+    [System.Diagnostics.DebuggerDisplay("Buffer[{LogicalIndex}] {Name} Bytes:{_Content?.Length ?? 0}")]
     public sealed partial class Buffer
     {
         #region lifecycle

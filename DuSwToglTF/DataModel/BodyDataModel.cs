@@ -15,17 +15,21 @@ namespace DuSwToglTF.DataModel
 
         public MaterialBuilder BodyMaterialBuilder { get => _material ?? Body.GetMaterialBuilder(); }
 
-        public BodyDataModel(IBody2 body, Matrix4x4 location)
+        public string DispalyName { get; }
+
+        public BodyDataModel(IBody2 body, Matrix4x4 location, string dispalyName)
         {
             Body = body;
             Location = location;
+            DispalyName = dispalyName;
         }
 
-        public BodyDataModel(IBody2 body, Matrix4x4 location,MaterialBuilder material)
+        public BodyDataModel(IBody2 body, Matrix4x4 location,MaterialBuilder material, string dispalyName)
         {
             Body = body;
             Location = location;
             this._material = material;
+            DispalyName = dispalyName;
         }
     }
 }

@@ -5,7 +5,7 @@ using System.Numerics;
 
 namespace SharpGLTF.Schema2
 {
-    //[System.Diagnostics.DebuggerDisplay("Skin[{LogicalIndex}] {Name}")]
+    [System.Diagnostics.DebuggerDisplay("Skin[{LogicalIndex}] {Name}")]
     public sealed partial class Skin
     {
         // https://github.com/KhronosGroup/glTF/issues/461

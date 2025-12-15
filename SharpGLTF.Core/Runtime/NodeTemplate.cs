@@ -8,7 +8,7 @@ namespace SharpGLTF.Runtime
     /// <summary>
     /// Defines a hierarchical transform node of a scene graph tree.
     /// </summary>
-    //[System.Diagnostics.DebuggerDisplay("[{LogicalNodeIndex}] {Name}")]
+    [System.Diagnostics.DebuggerDisplay("[{LogicalNodeIndex}] {Name}")]
     class NodeTemplate
     {
         #region lifecycle

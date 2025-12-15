@@ -12,7 +12,7 @@ namespace SharpGLTF.Scenes
         MESHBUILDER GetGeometryAsset();
     }
 
-    //[System.Diagnostics.DebuggerDisplay("Mesh")]
+    [System.Diagnostics.DebuggerDisplay("Mesh")]
     partial class MeshContent
         : IRenderableContent
         , ICloneable
@@ -79,7 +79,7 @@ namespace SharpGLTF.Scenes
         #endregion
     }
 
-    //[System.Diagnostics.DebuggerDisplay("Camera")]
+    [System.Diagnostics.DebuggerDisplay("Camera")]
     partial class CameraContent : ICloneable
     {
         #region lifecycle
@@ -119,7 +119,7 @@ namespace SharpGLTF.Scenes
         #endregion
     }
 
-    //[System.Diagnostics.DebuggerDisplay("Light")]
+    [System.Diagnostics.DebuggerDisplay("Light")]
     partial class LightContent : ICloneable
     {
         #region lifecycle
@@ -159,7 +159,7 @@ namespace SharpGLTF.Scenes
         #endregion
     }
 
-    //[System.Diagnostics.DebuggerDisplay("Custom")]
+    [System.Diagnostics.DebuggerDisplay("Custom")]
     partial class EmptyContent : ICloneable
     {
         #region lifecycle

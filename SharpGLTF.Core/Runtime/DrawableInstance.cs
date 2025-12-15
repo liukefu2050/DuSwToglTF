@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SharpGLTF.Runtime
 {
-    //[System.Diagnostics.DebuggerDisplay("{Template.Name} {MeshIndex}")]
+    [System.Diagnostics.DebuggerDisplay("{Template.Name} {MeshIndex}")]
     public readonly struct DrawableInstance
     {
         internal DrawableInstance(IDrawableTemplate t, Transforms.IGeometryTransform xform)

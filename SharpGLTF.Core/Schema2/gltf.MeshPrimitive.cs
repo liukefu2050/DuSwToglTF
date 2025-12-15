@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 
 using SharpGLTF.Collections;
 
 namespace SharpGLTF.Schema2
 {
-    //[System.Diagnostics.DebuggerDisplay("{_DebuggerDisplay(),nq}")]
+    [System.Diagnostics.DebuggerDisplay("{_DebuggerDisplay(),nq}")]
     public sealed partial class MeshPrimitive : IChildOf<Mesh>
     {
         #region debug
@@ -16,7 +15,7 @@ namespace SharpGLTF.Schema2
         {
             var txt = $"Primitive[{this.LogicalIndex}]";
 
-            return "Accessor";
+            return "Debug.DebuggerDisplay.ToReport(this, txt)";
         }
 
         #endregion

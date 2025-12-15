@@ -129,7 +129,7 @@ namespace SharpGLTF.Scenes
     /// <summary>
     /// Applies a fixed <see cref="Matrix4x4"/> transform to the underlaying content.
     /// </summary>
-    //[System.Diagnostics.DebuggerDisplay("Fixed Node[{_DebugName,nq}] = {Content}")]
+    [System.Diagnostics.DebuggerDisplay("Fixed Node[{_DebugName,nq}] = {Content}")]
     public partial class FixedTransformer : ContentTransformer
     {
         #region lifecycle
@@ -192,7 +192,7 @@ namespace SharpGLTF.Scenes
     /// <summary>
     /// Applies the transform of a single <see cref="NodeBuilder"/> to the underlaying content.
     /// </summary>
-    //[System.Diagnostics.DebuggerDisplay("Rigid Node[{_DebugName,nq}] = {Content}")]
+    [System.Diagnostics.DebuggerDisplay("Rigid Node[{_DebugName,nq}] = {Content}")]
     public partial class RigidTransformer : ContentTransformer
     {
         #region lifecycle
@@ -249,7 +249,7 @@ namespace SharpGLTF.Scenes
     /// <summary>
     /// Applies the transforms of many <see cref="NodeBuilder"/> to the underlaying content.
     /// </summary>
-    //[System.Diagnostics.DebuggerDisplay("Skinned Node[{_DebugName,nq}] = {Content}")]
+    [System.Diagnostics.DebuggerDisplay("Skinned Node[{_DebugName,nq}] = {Content}")]
     public partial class SkinnedTransformer : ContentTransformer
     {
         #region lifecycle

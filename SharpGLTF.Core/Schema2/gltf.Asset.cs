@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace SharpGLTF.Schema2
 {
-    //[System.Diagnostics.DebuggerDisplay("{Version} {MinVersion} {Generator} {Copyright}")]
+    [System.Diagnostics.DebuggerDisplay("{Version} {MinVersion} {Generator} {Copyright}")]
     public sealed partial class Asset
     {
         #region lifecycle

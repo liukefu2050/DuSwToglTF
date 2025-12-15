@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29306.81
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36603.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DuSwToglTF", "DuSwToglTF\DuSwToglTF.csproj", "{7ACEDAA9-2DE8-4485-837A-E7D58812A6DC}"
 EndProject
@@ -14,6 +14,13 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharpGLTF.Toolkit", "SharpGLTF.Toolkit\SharpGLTF.Toolkit.csproj", "{A22645E5-9CA7-4398-8158-E26747E11A2D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DuSwToglTFTests", "DuSwToglTFTests\DuSwToglTFTests.csproj", "{6D481974-B8D2-40DD-ABFB-D2118E4BD50B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForm", "WinForm\WinForm.csproj", "{E0F47D1A-5578-4327-BFDE-DFDFF6A0FBD6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2AB0B123-8BF2-492D-B680-F3324566AAE5} = {2AB0B123-8BF2-492D-B680-F3324566AAE5}
+		{7ACEDAA9-2DE8-4485-837A-E7D58812A6DC} = {7ACEDAA9-2DE8-4485-837A-E7D58812A6DC}
+		{A22645E5-9CA7-4398-8158-E26747E11A2D} = {A22645E5-9CA7-4398-8158-E26747E11A2D}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +62,14 @@ Global
 		{6D481974-B8D2-40DD-ABFB-D2118E4BD50B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6D481974-B8D2-40DD-ABFB-D2118E4BD50B}.Release|x64.ActiveCfg = Release|x64
 		{6D481974-B8D2-40DD-ABFB-D2118E4BD50B}.Release|x64.Build.0 = Release|x64
+		{E0F47D1A-5578-4327-BFDE-DFDFF6A0FBD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0F47D1A-5578-4327-BFDE-DFDFF6A0FBD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0F47D1A-5578-4327-BFDE-DFDFF6A0FBD6}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E0F47D1A-5578-4327-BFDE-DFDFF6A0FBD6}.Debug|x64.Build.0 = Debug|Any CPU
+		{E0F47D1A-5578-4327-BFDE-DFDFF6A0FBD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0F47D1A-5578-4327-BFDE-DFDFF6A0FBD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0F47D1A-5578-4327-BFDE-DFDFF6A0FBD6}.Release|x64.ActiveCfg = Release|Any CPU
+		{E0F47D1A-5578-4327-BFDE-DFDFF6A0FBD6}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

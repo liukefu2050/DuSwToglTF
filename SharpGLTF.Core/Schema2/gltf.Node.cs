@@ -12,7 +12,7 @@ namespace SharpGLTF.Schema2
         Node CreateNode(string name = null);
     }
 
-    //[System.Diagnostics.DebuggerDisplay("{_GetDebuggerDisplay(),nq}")]
+    [System.Diagnostics.DebuggerDisplay("{_GetDebuggerDisplay(),nq}")]
     public sealed partial class Node : IVisualNodeContainer
     {
         #region debug

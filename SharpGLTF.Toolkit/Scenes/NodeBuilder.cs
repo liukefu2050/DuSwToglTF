@@ -12,7 +12,7 @@ namespace SharpGLTF.Scenes
     /// <summary>
     /// Defines a node object within an armature.
     /// </summary>
-    //[System.Diagnostics.DebuggerDisplay("{_GetDebuggerDisplay(),nq}")]
+    [System.Diagnostics.DebuggerDisplay("{_GetDebuggerDisplay(),nq}")]
     public class NodeBuilder
     {
         #region debug

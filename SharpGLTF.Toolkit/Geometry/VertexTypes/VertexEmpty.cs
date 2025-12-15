@@ -12,7 +12,7 @@ namespace SharpGLTF.Geometry.VertexTypes
     /// empty <see cref="IVertexMaterial"/> or empty <see cref="IVertexSkinning"/>
     /// in a <see cref="VertexBuilder{TvG, TvM, TvS}"/> structure.
     /// </summary>
-    //[System.Diagnostics.DebuggerDisplay("Empty")]
+    [System.Diagnostics.DebuggerDisplay("Empty")]
     public readonly struct VertexEmpty : IVertexMaterial, IVertexSkinning
     {
         #region constructor

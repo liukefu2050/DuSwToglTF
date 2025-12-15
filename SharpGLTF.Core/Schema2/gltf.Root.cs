@@ -6,7 +6,7 @@ using SharpGLTF.Collections;
 
 namespace SharpGLTF.Schema2
 {
-    //[System.Diagnostics.DebuggerDisplay("Model Root")]
+    [System.Diagnostics.DebuggerDisplay("Model Root")]
     public sealed partial class ModelRoot : IConvertibleToGltf2
     {
         #region lifecycle

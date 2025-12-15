@@ -11,7 +11,7 @@ namespace SharpGLTF.Runtime
     /// <summary>
     /// Defines a node of a scene graph in <see cref="SceneInstance"/>
     /// </summary>
-    //[System.Diagnostics.DebuggerDisplay("{Name}")]
+    [System.Diagnostics.DebuggerDisplay("{Name}")]
     public sealed class NodeInstance
     {
         #region lifecycle

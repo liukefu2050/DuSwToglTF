@@ -479,7 +479,7 @@ namespace SharpGLTF.Geometry
         #endregion
     }
 
-    //[System.Diagnostics.DebuggerDisplay("Points[{Points.Count}] {_Material}")]
+    [System.Diagnostics.DebuggerDisplay("Points[{Points.Count}] {_Material}")]
     sealed class PointsPrimitiveBuilder<TMaterial, TvG, TvM, TvS> : PrimitiveBuilder<TMaterial, TvG, TvM, TvS>
         where TvG : struct, IVertexGeometry
         where TvM : struct, IVertexMaterial
@@ -551,7 +551,7 @@ namespace SharpGLTF.Geometry
         #endregion
     }
 
-    //[System.Diagnostics.DebuggerDisplay("Lines[{Lines.Count}] {_Material}")]
+    [System.Diagnostics.DebuggerDisplay("Lines[{Lines.Count}] {_Material}")]
     sealed class LinesPrimitiveBuilder<TMaterial, TvG, TvM, TvS> : PrimitiveBuilder<TMaterial, TvG, TvM, TvS>
         where TvG : struct, IVertexGeometry
         where TvM : struct, IVertexMaterial
@@ -624,7 +624,7 @@ namespace SharpGLTF.Geometry
         #endregion
     }
 
-    //[System.Diagnostics.DebuggerDisplay("Triangles[{Triangles.Count}] {_Material}")]
+    [System.Diagnostics.DebuggerDisplay("Triangles[{Triangles.Count}] {_Material}")]
     sealed class TrianglesPrimitiveBuilder<TMaterial, TvG, TvM, TvS> : PrimitiveBuilder<TMaterial, TvG, TvM, TvS>
         where TvG : struct, IVertexGeometry
         where TvM : struct, IVertexMaterial

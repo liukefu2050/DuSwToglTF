@@ -1,21 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 
 using BYTES = System.ArraySegment<byte>;
 
 namespace SharpGLTF.Schema2
 {
-    //[System.Diagnostics.DebuggerTypeProxy(typeof(Debug._BufferViewDebugProxy))]
-    //[System.Diagnostics.DebuggerDisplay("{_GetDebuggerDisplay(),nq}")]
+   // [System.Diagnostics.DebuggerTypeProxy(typeof(Debug._BufferViewDebugProxy))]
+ //   [System.Diagnostics.DebuggerDisplay("{_GetDebuggerDisplay(),nq}")]
     public sealed partial class BufferView
     {
         #region debug
 
         internal string _GetDebuggerDisplay()
         {
-            return this.Name ?? "Accessor";
+            return "Debug.DebuggerDisplay.ToReport(this)";
         }
 
         #endregion

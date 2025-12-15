@@ -10,7 +10,7 @@ using IMAGEFILE = SharpGLTF.Memory.MemoryImage;
 
 namespace SharpGLTF.Materials
 {
-    //[System.Diagnostics.DebuggerDisplay("{_DebuggerDisplay(),nq}")]
+    [System.Diagnostics.DebuggerDisplay("{_DebuggerDisplay(),nq}")]
     public class MaterialBuilder
     {
         #region debug

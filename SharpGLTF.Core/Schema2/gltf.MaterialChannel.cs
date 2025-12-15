@@ -11,7 +11,7 @@ namespace SharpGLTF.Schema2
     /// but wraps several components of the material
     /// to have an homogeneous and easy to use API.
     /// </remarks>
-    //[System.Diagnostics.DebuggerDisplay("Channel {_Key}")]
+    [System.Diagnostics.DebuggerDisplay("Channel {_Key}")]
     public readonly struct MaterialChannel
     {
         #region lifecycle

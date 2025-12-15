@@ -3,9 +3,11 @@ using DuSwToglTF.ExportContext;
 using SharpGLTF.Materials;
 using SolidWorks.Interop.sldworks;
 using SolidWorks.Interop.swconst;
+using System;
 using System.Collections.Generic;
 using System.Numerics;
 using static DuSwToglTF.SwExtension.CustomPropertiesExtension;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;
 
 namespace DuSwToglTF.Extension
 {
@@ -22,31 +24,50 @@ namespace DuSwToglTF.Extension
             {
                 var partDoc = doc as IPartDoc;
 
-                var bodies = partDoc.GetBodiesEx();
-
-                foreach (var body in bodies)
+                var bodies = partDoc.GetBodiesEx(swBodyType_e.swAllBodies);
+                var ddd = doc.GetTitle();
+                if (ddd != null)
                 {
-                    yield return new BodyDataModel(body, Matrix4x4.Identity);
+                    ddd = ddd.Replace(".sldprt","").Replace(".SLDPRT", "");
+                }
+                    
+                    foreach (var body in bodies)
+                {
+                    yield return new BodyDataModel(body, Matrix4x4.Identity,ddd);
                 }
             }
             else if (docType == swDocumentTypes_e.swDocASSEMBLY)
             {
                 var assDoc = doc as IAssemblyDoc;
                 var comps = assDoc.GetComponents(false) as object[];
-
+                
                 foreach (IComponent2 comp  in comps)
                 {
                     var bodies = comp.GetBodies2((int)swBodyType_e.swSolidBody) as object[];
+                    var comName = comp.Name2;
+                    if (bodies == null)
+                    {
+                        Console.WriteLine("无效的组件(无body)：" + comName);
+                        continue;
+                    }
                     var compMaterial = comp.GetMaterialBuilder();
-
+                    var loc = comp.Transform2.GetLocation();
+                    //Console.WriteLine( comName + ",loc：" + loc.ToString());
+                    //if (comName!=null && comName.Contains("/"))
+                    //{
+                    //   string[] dd = comName.Split('/');
+                    //   comName = dd[dd.Length - 1];
+                    //}
                     if (bodies != null)
                     {
-                        var loc = comp.Transform2.GetLocation();
-
                         foreach (IBody2 body in bodies)
                         {
-                            yield return new BodyDataModel(body, loc,compMaterial);
+                            yield return new BodyDataModel(body, loc,compMaterial, comName);
                         }
+                    }
+                    else
+                    {
+                        //yield return new BodyDataModel(null, loc, compMaterial, comName);
                     }
 
                 }

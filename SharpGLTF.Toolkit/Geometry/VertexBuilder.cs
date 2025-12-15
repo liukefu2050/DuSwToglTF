@@ -62,7 +62,7 @@ namespace SharpGLTF.Geometry
     /// <see cref="VertexJoints4"/>,
     /// <see cref="VertexJoints8"/>.
     /// </typeparam>
-    //[System.Diagnostics.DebuggerDisplay("{_GetDebuggerDisplay(),nq}")]
+    [System.Diagnostics.DebuggerDisplay("{_GetDebuggerDisplay(),nq}")]
     public partial struct VertexBuilder<TvG, TvM, TvS> : IVertexBuilder
         where TvG : struct, IVertexGeometry
         where TvM : struct, IVertexMaterial

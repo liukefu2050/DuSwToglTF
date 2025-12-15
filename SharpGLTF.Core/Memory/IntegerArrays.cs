@@ -12,7 +12,7 @@ namespace SharpGLTF.Memory
     /// <summary>
     /// Wraps an encoded <see cref="BYTES"/> and exposes it as an <see cref="IList{UInt32}"/>.
     /// </summary>
-    //[System.Diagnostics.DebuggerDisplay("Integer[{Count}]")]
+    [System.Diagnostics.DebuggerDisplay("Integer[{Count}]")]
     public readonly struct IntegerArray : IList<UInt32>, IReadOnlyList<UInt32>
     {
         #region constructors
